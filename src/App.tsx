@@ -1,12 +1,28 @@
-import React from 'react';
-import GradeTracker from './GradeTracker';
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import GradeTracker from "./components/GradeTracker";
+import ParliamentForm from "./components/form";
+import './home.css';
 
 function App() {
   return (
-    <div className="App">
-      <GradeTracker />
+    <Router>
+      <div>
+        {/* Navbar */}
+        <nav className="navbar">
+          <Link to="/gpa">GPA Tracker</Link>
+          <Link to="/members">สมาชิกสภาฯ</Link>
+        </nav>
 
-    </div>
+        {/* Route Content */}
+        <div className="content">
+          <Routes>
+            <Route path="/gpa" element={<GradeTracker />} />
+            <Route path="/members" element={<ParliamentForm />} />
+            <Route path="*" element={<p>เลือกเมนูด้านบน</p>} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 

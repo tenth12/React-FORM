@@ -1,0 +1,65 @@
+.parliament-form {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px #0000001a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  max-width: 90vw;
+  max-height: 90vw;
+}
+
+.parliament-form h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.parliament-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.parliament-form input, .parliament-form textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.parliament-form button {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #3b82f6;
+}
+
+.parliament-form .member-list {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.parliament-form .member-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.parliament-form .member-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.parliament-form .edit-btn { background-color: #facc15; color: #000; margin-right: 4px; }
+.parliament-form .delete-btn { background-color: #ef4444; }

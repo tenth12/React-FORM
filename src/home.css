@@ -1,0 +1,27 @@
+/* navbar */
+.navbar {
+  position: fixed; /* ติดบน */
+  top: 0;
+  left: 0;
+  width: 25%;
+  padding: 12px 24px;
+  display: flex;
+  gap: 20px;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ให้เนื้อหาห่างจาก navbar */
+.content {
+  margin-top: 70px; /* ความสูง navbar + ระยะห่าง */
+  padding: 20px;
+}
