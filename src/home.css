@@ -25,3 +25,13 @@
   margin-top: 70px; /* ความสูง navbar + ระยะห่าง */
   padding: 20px;
 }
+
+div p {
+  color: rgb(255, 0, 0);
+  font-size: 100px;
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  left: 5%;
+  top: 2%;
+}
